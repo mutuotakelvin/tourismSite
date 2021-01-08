@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import Contact from "../components/contact/Contact"
 
 export const query = graphql`
   query {
@@ -17,9 +18,8 @@ export const query = graphql`
 export default function contact({ data }) {
   return (
     <Layout>
-      <StyledHero img={data.connectBcg.childImageSharp.fluid}>
-        Contact Page
-      </StyledHero>
+      <StyledHero img={data.connectBcg.childImageSharp.fluid}></StyledHero>
+      <Contact />
     </Layout>
   )
 }

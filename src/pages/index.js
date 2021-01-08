@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import About from "../components/Home/About"
 import Tips from "../components/Home/Tips"
 import { graphql } from "gatsby"
@@ -26,9 +27,9 @@ export default ({ data }) => {
           title="The Amazing Mountain"
           info="Come and Explore the Maountain which is a world Heritage Site."
         >
-          <Link to="/places" className="btn-white">
+          <AniLink paintDrip hex="#AEECEE" to="/places" className="btn-white">
             explore places
-          </Link>
+          </AniLink>
         </Banner>
       </StyledHero>
       <About />
