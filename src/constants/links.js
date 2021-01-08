@@ -8,6 +8,10 @@ export default [
     text: "places",
   },
   {
+    path: "/blog",
+    text: "blog",
+  },
+  {
     path: "/contact",
     text: "contact",
   },
