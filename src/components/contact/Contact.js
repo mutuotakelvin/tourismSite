@@ -19,7 +19,7 @@ const Contact = () => {
               name="name"
               id="name"
               className={styles.formControl}
-              placeholdder="kelvin mutuota"
+              placeholder="kelvin mutuota"
             />
           </div>
           <div>
