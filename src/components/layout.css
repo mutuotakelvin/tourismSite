@@ -47,7 +47,7 @@ a {
 }
 
 .defaultHero {
-    min-height: calc(100vh - 62px);
+    min-height: calc(100vh - 62px);/* min-height to display the whole page minus the header */
     background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
         url("../images/defaultBcg.jpg") center/cover no-repeat;
     display: flex;
