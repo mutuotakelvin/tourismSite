@@ -7,6 +7,8 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import About from "../components/Home/About"
 import Tips from "../components/Home/Tips"
 import { graphql } from "gatsby"
+import FeaturedPlaces from "../components/Home/FeaturedPlaces"
+
 export const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
@@ -34,6 +36,7 @@ export default ({ data }) => {
       </StyledHero>
       <About />
       <Tips />
+      <FeaturedPlaces />
     </Layout>
   )
 }

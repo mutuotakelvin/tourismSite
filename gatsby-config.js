@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -23,6 +17,7 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        GATSBY_CONTENTFUL_OFFLINE: "true",
       },
     },
     `gatsby-plugin-styled-components`,
