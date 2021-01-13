@@ -48,16 +48,16 @@ const Template = ({ data }) => {
             </p>
             {timings ? (
               <p>
-                <FaTypo3 className={styles.icon} />
-                Timings - {timings}
+                <FaTypo3 className={styles.icon} /> Timings - {timings}
               </p>
             ) : (
-              <p className={styles.desc}>{description}</p>
+              <></>
             )}
-            <AniLink fade to="/places" className="btn-primary">
-              back to places
-            </AniLink>
           </div>
+          <p className={styles.desc}>{description}</p>
+          <AniLink fade to="/places" className="btn-primary">
+            back to places
+          </AniLink>
         </div>
       </section>
     </Layout>
