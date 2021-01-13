@@ -10,14 +10,12 @@ const Template = ({ data }) => {
     description: { description },
     images,
   } = data.place
-  console.log(images)
+
   const [mainImage, ...placeImages] = images
-  console.log(mainImage)
-  console.log(placeImages)
   return <h1>{name}</h1>
 }
 
-export const query = graphql`
+export const data = graphql`
   query($slug: String!) {
     contentfulAmazingMountainData(slug: { eq: $slug }) {
       name
